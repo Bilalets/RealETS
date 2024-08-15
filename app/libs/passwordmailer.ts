@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export const sendPasswordResetEmail = async (to: string, token: string) => {
-  const resetUrl = `https://sat.ets.edu.pk/Resetpassword?token=${token}`;
+  const resetUrl = `https://real-ets.vercel.app/Resetpassword?token=${token}`;
   await transporter.sendMail({
     from: process.env.EMAIL_USER,
     to,

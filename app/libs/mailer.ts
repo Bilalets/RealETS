@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export const sendVerificationEmail = async (to: string, token: string) => {
-  const verificationUrl = `https://sat.ets.edu.pk/Verify?token=${token}`;
+  const verificationUrl = `https://real-ets.vercel.app/Verify?token=${token}`;
   await transporter.sendMail({
     from: process.env.EMAIL_USER,
     to,
