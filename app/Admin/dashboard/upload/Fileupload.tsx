@@ -41,7 +41,7 @@ const FileUpload: React.FC = () => {
 
   return (
     <div>
-      <h1>Upload CSV File</h1>
+      <h1>Upload CSV Files</h1>
       <input type="file" accept=".csv" onChange={handleFileChange} />
       <button onClick={handleUpload} disabled={loading}>
         {loading ? 'Uploading...' : 'Upload'}
